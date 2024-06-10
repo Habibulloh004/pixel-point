@@ -9,7 +9,7 @@ const Solutions = dynamic(() => import("@/components/Solutions"));
 const Testimonials = dynamic(() => import("@/components/Testimonials"));
 
 export default function Home() {
-  const [screenSize, setScreenSize] = useState("");
+  const [screenSize, setScreenSize] = useState(1550);
 
   function resizeHandler() {
     setScreenSize(window.innerWidth);

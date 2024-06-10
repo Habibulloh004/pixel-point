@@ -9,7 +9,7 @@ import { FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
   const [updateNavbar, setUpdateNavbar] = useState(false);
-  const [screenSize, setScreenSize] = useState("");
+  const [screenSize, setScreenSize] = useState(1550);
   function scrollHandler() {
     if (window.scrollY >= 20) {
       setUpdateNavbar(true);
