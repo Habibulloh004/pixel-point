@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    background: url("../../public/HeroBg.svg") no-repeat center center / cover;
+}
+
+.testimonial {
+    background: url("../../public/TestimonialBg.svg") no-repeat center center / cover;
+}
