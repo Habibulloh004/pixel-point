@@ -1,22 +1,8 @@
-// "use client";
 import Image from "next/image";
-// import React, { useState, useEffect } from "react";
 import { FooterLogo } from "../../public";
 import { footerItems } from "@/utils";
 
 const Footer = () => {
-  // const [screenSize, setScreenSize] = useState("");
-
-  // function resizeHandler() {
-  //   setScreenSize(window.innerWidth);
-  // }
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", resizeHandler);
-  //   return () => {
-  //     window.removeEventListener("resize", resizeHandler);
-  //   };
-  // }, []);
   return (
     <footer className="border-t border-gray-800">
       <div className="w-[95%] mx-auto flex justify-between items-center py-8">
@@ -40,7 +26,6 @@ const Footer = () => {
                     key={idx}
                     className="flex gap-3 items-center hover:text-white hover:font-semibold transition-all cursor-pointer w-full"
                   >
-                    {/* <Image src={i.icon} alt="footerIcons" /> */}
                     <p className="text-lg">{i.icon()}</p>
                     <p>{i.title}</p>
                   </span>

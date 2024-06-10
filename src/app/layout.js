@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 // import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 const Navbar = dynamic(() => import("@/components/Navbar"));
 
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
       <body className={`bg-bg-body text-white ${inter.className}`}>
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );
