@@ -25,7 +25,7 @@ import Github from "./Github.svg";
 import Frame from "./Frame.svg";
 
 export {
-    HeroBg,
+  HeroBg,
   Twitter,
   LinkedIn,
   Github,

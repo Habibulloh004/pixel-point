@@ -19,14 +19,14 @@ const Footer = () => {
   // }, []);
   return (
     <footer className="border-t border-gray-800">
-      <div className="w-9/12 mx-auto flex justify-between items-center py-8">
+      <div className="w-[95%] mx-auto flex justify-between items-center py-8">
         <div className="flex flex-col justify-between items-start h-36">
           <Image src={FooterLogo} className="cursor-pointer" alt="footerLogo" />
           <p className="text-secondary-gray text-sm">
             Devoptima 2023 © All rights reserved
           </p>
         </div>
-        <ul className="flex justify-between items-start w-[45%] mt-4">
+        <ul className="flex justify-between items-start w-[40%] mt-4">
           {footerItems.map((item) => (
             <li
               key={item.id}
