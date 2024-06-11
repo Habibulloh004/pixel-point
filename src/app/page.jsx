@@ -2,7 +2,7 @@
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import dynamic from "next/dynamic";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 
 const About = dynamic(() => import("@/components/About"));
 const Solutions = dynamic(() => import("@/components/Solutions"));
@@ -14,6 +14,10 @@ export default function Home() {
   function resizeHandler() {
     setScreenSize(window.innerWidth);
   }
+
+  useLayoutEffect(() => {
+    setScreenSize(window.innerWidth)
+  }, [])
 
   useEffect(() => {
     window.addEventListener("resize", resizeHandler);

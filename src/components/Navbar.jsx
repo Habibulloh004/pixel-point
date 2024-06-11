@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Logo } from "../../public";
 import Link from "next/link";
 import { navItems } from "@/utils";
@@ -21,6 +21,10 @@ const Navbar = () => {
   function resizeHandler() {
     setScreenSize(window.innerWidth);
   }
+
+  useLayoutEffect(() => {
+    setScreenSize(window.innerWidth)
+  }, [])
 
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
